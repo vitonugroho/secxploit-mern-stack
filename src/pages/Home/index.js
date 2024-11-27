@@ -4,7 +4,6 @@ import Intro from "../../pages/Home/Intro";
 import About from "../../pages/Home/About";
 import Certificates from "../../pages/Home/Certificates";
 import Projects from "../../pages/Home/Projects";
-import Blog from "../../pages/Home/Blog";
 import Footer from "../../pages/Home/Footer";
 
 function Home() {
@@ -16,7 +15,6 @@ function Home() {
         <About />
         <Certificates/>
         <Projects/>
-        <Blog/>
         <Footer/>
       </div>
     </div>

@@ -3,7 +3,7 @@
     width: 0;
   }
   to {
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -19,6 +19,6 @@
   white-space: nowrap;
   border-right: 1.5px solid white; 
   width: 0; 
-  animation: typing 6s steps(30, end) 1, blink 0.8s step-end infinite;
+  animation: typing 6s steps(50, end) 1, blink 0.8s step-end infinite;
   animation-iteration-count: infinite;
 }

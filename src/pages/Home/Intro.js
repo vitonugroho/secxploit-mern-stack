@@ -21,7 +21,7 @@ function Intro() {
           vulnerabilities in systems. <br></br> Let’s chat more about how I can help
           safeguard your digital assets!
         </p>
-        <button className="max-tablet:text-[0.8rem] px-10 py-3 border-2 rounded border-tertiary text-tertiary">
+        <button className="max-tablet:text-[0.8rem] px-10 py-3 border-2 rounded border-tertiary text-tertiary hover:bg-tertiary hover:text-slate-950 hover:shadow-xl transition duration-300 ease-in-out">
           <a href="#">Contact Me</a>
         </button>
       </div>

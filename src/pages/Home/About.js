@@ -13,7 +13,7 @@ function About() {
   ];
 
   return (
-    <div className="pt-20 bg-gradient-to-r from-slate-950 to-blue-950 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950">
+    <div id="About" className="pt-20 bg-gradient-to-r from-slate-950 to-blue-950 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950">
       <SectionTitle title="About" />
       <div className="max-tablet:flex-col flex items-center mb-10 container mx-auto">
         <div className="max-tablet:w-[16rem] max-tablet:h-[20vh] max-desktop:h-[44.2vh]">
