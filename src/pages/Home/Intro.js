@@ -22,7 +22,7 @@ function Intro() {
           safeguard your digital assets!
         </p>
         <button className="max-tablet:text-[0.8rem] px-10 py-3 border-2 rounded border-tertiary text-tertiary hover:bg-tertiary hover:text-slate-950 hover:shadow-xl transition duration-300 ease-in-out">
-          <a href="#">Contact Me</a>
+          <a href="#Contact">Contact Me</a>
         </button>
       </div>
     </div>
