@@ -138,16 +138,16 @@ function Header() {
           {/* Mobile Navigation Menu */}
           {isMenuOpen && (
             <div className="absolute top-full left-0 w-full bg-gradient-to-r from-slate-950 to-blue-950 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 text-white flex flex-col space-y-4 items-center p-4 opacity-97">
-              <a href="#" className="hover:text-gray-300 text-lg font-medium">
+              <a href="#About" className="hover:text-gray-300 text-lg font-medium">
                 About
               </a>
-              <a href="#" className="hover:text-gray-300 text-lg font-medium">
+              <a href="#Certificates" className="hover:text-gray-300 text-lg font-medium">
                 Certificates
               </a>
               {/* Projects Dropdown */}
               <div className="group relative">
                 <a
-                  href="#"
+                  href="#Projects"
                   className="hover:text-gray-300 text-lg font-medium flex items-center"
                 >
                   Projects
@@ -170,26 +170,26 @@ function Header() {
                 {/* Dropdown Content */}
                 <div className="absolute left-0 mt-2 w-48 bg-white dark:bg-slate-800 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
                   <a
-                    href="#"
+                    href="#Projects"
                     className="block px-4 py-2 text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700"
                   >
                     Image Showcase
                   </a>
                   <a
-                    href="#"
+                    href="https://05tple001.secxploit.xyz" target="_blank"
                     className="block px-4 py-2 text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700"
                   >
                     Live Project 1
                   </a>
                   <a
-                    href="#"
+                    href="https://ngopiatuh.secxploit.xyz" target="_blank"
                     className="block px-4 py-2 text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700"
                   >
                     Live Project 2
                   </a>
                 </div>
               </div>
-              <a href="#" className="hover:text-gray-300 text-lg font-medium">
+              <a href="/Blogs" className="hover:text-gray-300 text-lg font-medium">
                 Blogs
               </a>
             </div>

@@ -3,7 +3,7 @@
     width: 0;
   }
   to {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -21,4 +21,11 @@
   width: 0; 
   animation: typing 6s steps(50, end) 1, blink 0.8s step-end infinite;
   animation-iteration-count: infinite;
+}
+
+@media only screen and (max-width: 639px) {
+  .typing-effect {
+    height: 2rem;
+}
+
 }
