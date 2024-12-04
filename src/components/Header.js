@@ -7,7 +7,8 @@ function Header() {
 
   // Detect if the user has scrolled past a certain point
   const handleScroll = () => {
-    if (window.scrollY > 50) { // Change 50 to the desired scroll threshold
+    if (window.scrollY > 50) {
+      // Change 50 to the desired scroll threshold
       setScrolled(true);
     } else {
       setScrolled(false);
@@ -47,7 +48,10 @@ function Header() {
           <a href="#About" className="hover:text-gray-300 text-lg font-medium">
             About
           </a>
-          <a href="#Certificates" className="hover:text-gray-300 text-lg font-medium">
+          <a
+            href="#Certificates"
+            className="hover:text-gray-300 text-lg font-medium"
+          >
             Certificates
           </a>
 
@@ -83,28 +87,35 @@ function Header() {
                 Showcase
               </a>
               <a
-                href="/Login" target="_blank" rel="noopener noreferrer"
+                href="/Login"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block px-4 py-2 text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700"
               >
                 Login Form Demo
               </a>
               <a
                 href="http://05tple001.secxploit.xyz/"
+                target="_blank"
                 className="block px-4 py-2 text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700"
               >
                 Live Project 1
               </a>
               <a
-                href="https://ngopiatuh.secxploit.xyz/" target="_blank"
+                href="https://ngopiatuh.secxploit.xyz/"
+                target="_blank"
                 className="block px-4 py-2 text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700"
-                
               >
                 Live Project 2
               </a>
             </div>
           </div>
 
-          <a href="/Blog" className="hover:text-gray-300 text-lg font-medium">
+          <a
+            href="/Blog"
+            target="_blank"
+            className="hover:text-gray-300 text-lg font-medium"
+          >
             Blogs
           </a>
         </nav>
@@ -138,16 +149,29 @@ function Header() {
           {/* Mobile Navigation Menu */}
           {isMenuOpen && (
             <div className="absolute top-full left-0 w-full bg-gradient-to-r from-slate-950 to-blue-950 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 text-white flex flex-col space-y-4 items-center p-4 opacity-97">
-              <a href="#About" className="hover:text-gray-300 text-lg font-medium">
+              <a
+                href="#About"
+                className="hover:text-gray-300 text-lg font-medium"
+              >
                 About
               </a>
-              <a href="#Certificates" className="hover:text-gray-300 text-lg font-medium">
+              <a
+                href="#Certificates"
+                className="hover:text-gray-300 text-lg font-medium"
+              >
                 Certificates
+              </a>
+              <a
+                href="/Blogs"
+                target="_blank"
+                className="hover:text-gray-300 text-lg font-medium"
+              >
+                Blogs
               </a>
               {/* Projects Dropdown */}
               <div className="group relative">
                 <a
-                  href="#Projects"
+                  href="#"
                   className="hover:text-gray-300 text-lg font-medium flex items-center"
                 >
                   Projects
@@ -173,25 +197,32 @@ function Header() {
                     href="#Projects"
                     className="block px-4 py-2 text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700"
                   >
-                    Image Showcase
+                    Showcase
                   </a>
                   <a
-                    href="https://05tple001.secxploit.xyz" target="_blank"
+                    href="/Login"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-4 py-2 text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700"
+                  >
+                    Login Form Demo
+                  </a>
+                  <a
+                    href="https://05tple001.secxploit.xyz"
+                    target="_blank"
                     className="block px-4 py-2 text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700"
                   >
                     Live Project 1
                   </a>
                   <a
-                    href="https://ngopiatuh.secxploit.xyz" target="_blank"
+                    href="https://ngopiatuh.secxploit.xyz"
+                    target="_blank"
                     className="block px-4 py-2 text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700"
                   >
                     Live Project 2
                   </a>
                 </div>
               </div>
-              <a href="/Blogs" className="hover:text-gray-300 text-lg font-medium">
-                Blogs
-              </a>
             </div>
           )}
         </div>

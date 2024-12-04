@@ -13,6 +13,7 @@ function Certificates() {
           <img className='max-tablet:w-[10rem]' width='400rem' src='cert2.jpg'></img>
           <img className='max-tablet:w-[10rem]' width='400rem' src='cert3.jpg'></img>
           <img className='max-tablet:w-[10rem]' width='300rem' src='cert4.jpg'></img>
+          <img className='max-tablet:w-[10rem]' width='300rem' src='cert5.jpg'></img>
           <img className='max-tablet:w-[10rem]' width='300rem' src='isc2-candidate.png'></img>
           <div>
 
