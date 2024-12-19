@@ -10,10 +10,11 @@ function Contact() {
   });
   const [errors, setErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [alertVisible, setAlertVisible] = useState(false);  // New state for alert visibility
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
+    setFormData({ 
       ...formData,
       [name]: value,
     });
@@ -35,17 +36,22 @@ function Contact() {
     e.preventDefault();
     const newErrors = validate();
     setErrors(newErrors);
-  
+
     if (Object.keys(newErrors).length === 0) {
       // Menambahkan log untuk memeriksa apakah data dikirim
       console.log("Submitting form data:", formData);
-  
+
       // Kirim data ke server Node.js
       axios
-        .post("http://localhost:5000/send-email", formData)
+        .post("https://secxploit.xyz/send-email", formData)
         .then((response) => {
           console.log("Response from server:", response.data);
           setIsSubmitted(true);
+          // Show the success alert for 3 seconds
+          setAlertVisible(true);
+          setTimeout(() => {
+            setAlertVisible(false);  // Hide the alert after 3 seconds
+          }, 3000);
         })
         .catch((error) => {
           console.error("There was an error sending the message!", error);
@@ -63,11 +69,16 @@ function Contact() {
             <h2 className="text-2xl font-semibold text-center text-gray-800 dark:text-gray-200 text-white">
               Contact Us
             </h2>
-            {isSubmitted && (
-              <div className="text-center text-green-500 mb-4">
-                <p>Your message has been successfully sent!</p>
+
+            {/* Floating success alert (centered) */}
+            {alertVisible && (
+              <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+                <div className="bg-green-500 text-white p-5 rounded shadow-lg text-center">
+                  <p>Your message has been successfully sent!</p>
+                </div>
               </div>
             )}
+
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
                 <label
@@ -134,7 +145,7 @@ function Contact() {
 
               <button
                 type="submit"
-                className="w-full px-10 py-3 border-2 rounded border-tertiary text-tertiary hover:bg-tertiary hover:text-slate-950 hover:shadow-xl transition duration-300 ease-in-out "
+                className="w-full px-10 py-3 border-2 rounded border-tertiary text-tertiary hover:bg-tertiary hover:text-slate-950 hover:shadow-xl transition duration-300 ease-in-out"
               >
                 Send Message
               </button>

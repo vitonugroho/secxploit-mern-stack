@@ -2,41 +2,57 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-
 const app = express();
+const PORT = 5000;
+
+// Middleware to handle CORS and parse JSON body
 app.use(cors());
 app.use(bodyParser.json());
 
-// Setup Nodemailer transporter
+// Route for GET / 
+app.get('/', (req, res) => {
+  res.send('Welcome to the Email API!');
+});
+
+// Set up Nodemailer transporter using Gmail
 const transporter = nodemailer.createTransport({
-  service: 'gmail', // Anda bisa menggunakan email provider lain
+  service: 'gmail', // You can replace it with another email service if needed
   auth: {
-    user: 'ramving2626@gmail.com',
-    pass: 'Apaajajugaboleh12345', // Pastikan menggunakan email app password atau OAuth untuk lebih aman
+    user: 'ramving26@gmail.com', // Your Gmail address
+    pass: 'deoi fvej tnnb jiku', // Use App Password if 2-Step Verification is enabled
   },
 });
 
+// POST route to handle contact form submission
 app.post('/send-email', (req, res) => {
   const { name, email, message } = req.body;
 
-  // Setup email data
+  // Define email options
   const mailOptions = {
-    from: email,
-    to: 'your-email@example.com', // Ganti dengan alamat email Anda
-    subject: `New message from ${name}`,
-    text: `Message: ${message}\n\nFrom: ${name} <${email}>`,
+    from: email, // Sender's email
+    to: 'ramving26@gmail.com', // Recipient's email
+    subject: `New message from ${name}`, // Subject line
+    text: `Message: ${message}\n\nFrom: ${name} <${email}>`, // Email body
   };
 
-  // Send email
+  // Send the email
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      return res.status(500).send('Error sending email');
+      console.error('Error sending email:', error); // Log error on the server
+      return res.status(500).json({ message: 'Error sending email', error: error.message });
     }
-    res.status(200).send('Email sent successfully');
+    console.log('Email sent:', info.response); // Log success response
+    return res.status(200).json({ message: 'Email sent successfully' });
   });
 });
 
-// Start server
-app.listen(5000, () => {
-  console.log('Server running on http://localhost:5000');
+// Start the server
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
 });
+
+
+
+
+// user: 'ramving26@gmail.com', // Replace with your email
+// pass: 'deoi fvej tnnb jiku', // Use an app password (do not use your regular Gmail password)

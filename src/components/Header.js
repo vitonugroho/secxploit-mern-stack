@@ -95,8 +95,33 @@ function Header() {
                 Login Form Demo
               </a>
               <a
-                href="http://05tple001.secxploit.xyz/"
+                href="/Snake"
                 target="_blank"
+                rel="noopener noreferrer"
+                className="block px-4 py-2 text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700"
+              >
+                Snake Game Demo
+              </a>
+              <a
+                href="/customchart"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block px-4 py-2 text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700"
+              >
+                Custom Chart
+              </a>
+              <a
+                href="https://simkaryawan.secxploit.xyz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block px-4 py-2 text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700"
+              >
+                SIM Karyawan Demo
+              </a>
+              <a
+                href="http://05tple001.my.id/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block px-4 py-2 text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700"
               >
                 Live Project 1
@@ -104,6 +129,7 @@ function Header() {
               <a
                 href="https://ngopiatuh.secxploit.xyz/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="block px-4 py-2 text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700"
               >
                 Live Project 2
@@ -208,8 +234,33 @@ function Header() {
                     Login Form Demo
                   </a>
                   <a
-                    href="https://05tple001.secxploit.xyz"
+                    href="/Snake"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-4 py-2 text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700"
+                  >
+                    Snake Game Demo
+                  </a>
+                  <a
+                    href="/CustomChart"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-4 py-2 text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700"
+                  >
+                    Custom Chart
+                  </a>
+                  <a
+                    href="https://simkaryawan.secxploit.xyz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-4 py-2 text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700"
+                  >
+                    Sistem Informasi Karyawan Demo
+                  </a>
+                  <a
+                    href="https://05tple001.my.id"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block px-4 py-2 text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700"
                   >
                     Live Project 1
@@ -217,6 +268,7 @@ function Header() {
                   <a
                     href="https://ngopiatuh.secxploit.xyz"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="block px-4 py-2 text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700"
                   >
                     Live Project 2

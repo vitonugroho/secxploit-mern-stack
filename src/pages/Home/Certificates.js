@@ -1,6 +1,5 @@
 import React from 'react'
 import SectionTitle from '../../components/SectionTitle'
-import { certificates } from '../../components/certificates'
 
 function Certificates() {
   return (
@@ -8,14 +7,15 @@ function Certificates() {
       <SectionTitle title="Certificates"/>
       <div className='flex container mx-auto'>
         <div className='flex flex-wrap gap-10 items-center justify-center pb-[10rem]'>
-          <img className='max-tablet:w-[10rem]' width='300rem' src='cc.jpg'></img>
-          <img className='max-tablet:w-[10rem]' width='400rem' src='cert1.jpg'></img>
-          <img className='max-tablet:w-[10rem]' width='400rem' src='cert2.jpg'></img>
-          <img className='max-tablet:w-[10rem]' width='400rem' src='cert3.jpg'></img>
-          <img className='max-tablet:w-[10rem]' width='300rem' src='cert4.jpg'></img>
-          <img className='max-tablet:w-[10rem]' width='300rem' src='cert5.jpg'></img>
-          <img className='max-tablet:w-[10rem]' width='300rem' src='isc2-candidate.png'></img>
-          <div>
+          <img className='max-tablet:w-[10rem]' width='300rem' src='cc.jpg' alt='isc2-cc'></img>
+          <img className='max-tablet:w-[10rem]' width='400rem' src='cert1.jpg' alt='udemy'></img>
+          <img className='max-tablet:w-[10rem]' width='400rem' src='cert2.jpg' alt='udemy'></img>
+          <img className='max-tablet:w-[10rem]' width='400rem' src='cert3.jpg' alt='udemy'></img>
+          <img className='max-tablet:w-[10rem]' width='300rem' src='cert4.jpg' alt='bnsp'></img>
+          <img className='max-tablet:w-[10rem]' width='300rem' src='cert5.jpg' alt='sololearn'></img>
+          <img className='max-tablet:w-[10rem]' width='300rem' src='cert6.jpg' alt='sololearn'></img>
+          <img className='max-tablet:w-[10rem]' width='300rem' src='isc2-candidate.png' alt='isc2-candidate'></img>
+          <div> 
 
           </div>
         </div>

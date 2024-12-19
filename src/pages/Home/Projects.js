@@ -32,6 +32,22 @@ function Projects() {
               alt="Project Thumbnail"
             />
           </a>
+          <a href="/Snake" target="_blank" rel="noopener noreferrer">
+            <img
+              className="max-tablet:w-[25rem] rounded-md transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl"
+              width="600rem"
+              src="snake.png"
+              alt="Project Thumbnail"
+            />
+          </a>
+          <a href="https://simkaryawan.secxploit.xyz" target="_blank" rel="noopener noreferrer">
+            <img
+              className="max-tablet:w-[25rem] rounded-md transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl"
+              width="600rem"
+              src="simkaryawan.png"
+              alt="Project Thumbnail"
+            />
+          </a>
         </div>
       </div>
     </div>
